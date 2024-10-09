@@ -3,6 +3,11 @@
                  "Cevaplarınızı şık olarak belirtiniz, \nHadi başlıyalım...");
 
 
+#region Question-1
+
+
+// Kullanıcıya ilk soruyu sorup şıklardan birini seçmesini istiyoruz.
+  
 Console.Write("\nDünyanın en büyük okyanusu hangisidir?" +
               "\nA) Atlantik Okyanusu" +
               "\nB) Pasifik Okyanusu" +
@@ -10,9 +15,16 @@ Console.Write("\nDünyanın en büyük okyanusu hangisidir?" +
               "\nCevap: ");
 
 string answer1 = Console.ReadLine();
+
 int counter = 0;
 
 answer1 = answer1.ToLower();
+
+
+
+// Verilen cevabın doğru olup olmadığını kontrol ediyoruz. 
+
+// Cevap doğru ise counter değişkenini bir arttırıyoruz.
 
 if (answer1 == "b")
 {
@@ -24,6 +36,14 @@ else
     Console.WriteLine("Maalesef, yanlış cevap.");
 }
 
+
+#endregion
+
+#region Question-2
+  
+
+// Kullanıcıya ilk soruyu sorup şıklardan birini seçmesini istiyoruz
+
 Console.Write("\nHangi gezegen \"Kırmızı Gezegen\" olarak bilinir?" +
               "\nA) Mars" +
               "\nB) Venüs" +
@@ -31,7 +51,18 @@ Console.Write("\nHangi gezegen \"Kırmızı Gezegen\" olarak bilinir?" +
               "\nCevap: ");
 
 string answer2 = Console.ReadLine();
+
 answer2 = answer2.ToLower();
+
+
+
+// Kullanıcının verdiği cevabın doğru olup olmadığını kontrol ediyoruz.
+
+// Cevap doğru ise counter değişkenini bir arttırıyoruz.
+
+// counter değişkeni 2'ye eşitse yarışmayı kazandığı için tebrik ediyoruz
+
+// counter değişkeni 0 ise elendiği belirtiyoruz.
 
 if (answer2 == "a")
 {
@@ -62,6 +93,12 @@ else
     }
 }
 
+
+
+// counter değişkeni 1 ise yarışmacı 3.soruya doğru cevap verip hala büyük ödülü kazanabilir.
+
+// Toplam doğru cevap sayısını kontrol edip koşul sağlanıyorsa 3. soruyu soruyoruz.
+
 if (counter == 1)
 {
     Console.Write("\nHangisi \"En Hızlı\" kara canlısıdır?" +
@@ -71,8 +108,20 @@ if (counter == 1)
                   "\nCevap: ");
 
     string answer3 = Console.ReadLine();
+  
     answer3 = answer3.ToLower();
 
+
+
+
+  // Kullanıcının verdiği cevabın doğru olup olmadığını kontrol ediyoruz.
+
+  // Cevap doğru ise counter değişkenini bir arttırıyoruz.
+
+  // counter değişkeni 2'ye eşitse yarışmayı kazandığı için tebrik ediyoruz
+
+  // Cevap yanlış ise elendiğini belirtiyoruz
+  
     if (answer3 == "b")
     {
         Console.WriteLine("Tebrikler doğru cevap verdiniz.");
